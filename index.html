@@ -30,22 +30,19 @@
 <body class="text-slate-800 bg-white">
 
     <!-- Navigation -->
-    <!-- Updated background to Black -->
     <nav class="fixed w-full z-50 bg-black backdrop-blur-sm shadow-sm transition-all duration-300">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-2">
                 <!-- LOGO -->
-                <!-- Note: Ensure your logo image has a transparent background to look best on the black bar -->
                 <img src="https://i.ibb.co/842nJx5k/Screen-Shot-2026-01-02-at-3-50-02-PM.png" alt="Mural Me Logo" class="h-12 w-auto object-contain bg-white/20 rounded-lg p-1">
             </div>
-            <!-- Updated text color to white for contrast on Black -->
             <div class="hidden md:flex space-x-8 items-center font-medium text-white">
                 <a href="#story" class="hover:text-slate-200 transition">Our Story</a>
                 <a href="#race-to-5" class="hover:text-slate-200 transition">The Race to 5</a>
                 <a href="#work" class="hover:text-slate-200 transition">The Work</a>
             </div>
-            <!-- Updated Button: Magenta background (#ec008c) -->
-            <a href="#book" class="hidden md:inline-block bg-[#ec008c] text-white px-6 py-2.5 rounded-full font-semibold hover:bg-pink-600 transition shadow-lg transform hover:-translate-y-0.5">
+            <!-- Updated Button: Links to Cal.com -->
+            <a href="https://cal.com/antony-king-yrxtiq/60min" target="_blank" class="hidden md:inline-block bg-[#ec008c] text-white px-6 py-2.5 rounded-full font-semibold hover:bg-pink-600 transition shadow-lg transform hover:-translate-y-0.5">
                 Join the Starting 5
             </a>
             <!-- Mobile Menu Button (White text) -->
@@ -61,19 +58,20 @@
             <a href="#story" onclick="document.getElementById('mobileMenu').classList.toggle('open')">Our Story</a>
             <a href="#race-to-5" onclick="document.getElementById('mobileMenu').classList.toggle('open')">The Race to 5</a>
             <a href="#work" onclick="document.getElementById('mobileMenu').classList.toggle('open')">The Work</a>
-            <a href="#book" onclick="document.getElementById('mobileMenu').classList.toggle('open')" class="text-blue-600">Join the Starting 5</a>
+            <!-- Updated Mobile Link: Links to Cal.com -->
+            <a href="https://cal.com/antony-king-yrxtiq/60min" target="_blank" onclick="document.getElementById('mobileMenu').classList.toggle('open')" class="text-blue-600">Join the Starting 5</a>
         </div>
         <button class="absolute top-6 right-6 text-3xl text-slate-500" onclick="document.getElementById('mobileMenu').classList.toggle('open')">
             <i class="fas fa-times"></i>
         </button>
     </div>
 
-    <!-- Hero Section (Full Top Part - Graphic Only) -->
+    <!-- 1. Hero Section -->
     <header class="relative pt-24 bg-[#ffd340]">
         <img src="https://i.ibb.co/6RFmdjx2/Top-Graphic.png" alt="Mural Me Banner" class="w-full h-auto block shadow-sm">
     </header>
 
-    <!-- The Founder's Story Section -->
+    <!-- 2. The Founder's Story Section -->
     <section id="story" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-16 items-center">
@@ -110,7 +108,24 @@
         </div>
     </section>
 
-    <!-- Photo Impact (Yellow Background #ffd340) -->
+    <!-- 3. Founder's Inspiration (Moved Up) -->
+    <section class="py-20 bg-[#ec008c] text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://i.ibb.co/WpVMsXVR/Gemini-Generated-Image-bhm88cbhm88cbhm8.png" alt="My Inspiration - Family" class="rounded-2xl shadow-2xl w-full h-auto object-cover transform hover:scale-[1.02] transition duration-500">
+                </div>
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-6">This is my inspiration.</h2>
+                    <p class="text-xl md:text-2xl font-medium leading-relaxed opacity-95">
+                        My four girls and amazing wife is what helps me to stay energized when I run into days where it feels like the world zaps all the energy from my life.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Photo Impact (Yellow Background) - The Bridge to Customer -->
     <section class="py-24 bg-[#ffd340]">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-4xl md:text-6xl font-extrabold mb-8 text-[#ec008c] leading-tight">
@@ -125,41 +140,7 @@
         </div>
     </section>
 
-    <!-- The Race to 5 / Offer Section -->
-    <!-- Updated ID and Content for 5 Customers / 40% Off -->
-    <section id="race-to-5" class="py-20 bg-slate-900 text-white relative overflow-hidden">
-        <!-- Background Elements -->
-        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-20">
-            <div class="absolute w-96 h-96 bg-blue-500 rounded-full -top-20 -left-20 blur-3xl"></div>
-            <div class="absolute w-96 h-96 bg-pink-500 rounded-full top-1/2 right-0 blur-3xl"></div>
-        </div>
-
-        <div class="container mx-auto px-6 relative z-10 text-center">
-            <h2 class="text-3xl md:text-5xl font-bold mb-6">Join the Race to Be Part of the First 5 Customers</h2>
-            <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-yellow-500 mx-auto mb-8"></div>
-            
-            <p class="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-                We are looking for our first <strong>5 Founding Customers</strong>. We don't just want to install a mural; we want to trace your experience, get your honest feedback, and start a movement together.
-            </p>
-            
-            <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 max-w-2xl mx-auto transform hover:scale-105 transition duration-300 shadow-2xl">
-                <div class="flex items-center justify-center gap-4 mb-2">
-                     <span class="text-3xl">🏁</span>
-                     <div class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-500">
-                        40% OFF
-                    </div>
-                    <span class="text-3xl">🏁</span>
-                </div>
-                
-                <p class="text-lg text-white font-medium">For The First 5 Founding Homes</p>
-                <p class="text-sm text-slate-400 mt-4 px-6 leading-relaxed">
-                    Receive 40% OFF your entire project. We aren't just looking for clients; we're looking for partners to help us launch. Help us tell our story, and we'll help you tell yours.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Commercial Roots / Portfolio -->
+    <!-- 5. Commercial Roots / Portfolio -->
     <section id="work" class="py-20 bg-slate-50 clip-slant">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
@@ -202,7 +183,7 @@
         </div>
     </section>
 
-    <!-- Process -->
+    <!-- 6. Process -->
     <section id="process" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <!-- Replaced text content with the provided graphic -->
@@ -210,78 +191,62 @@
         </div>
     </section>
 
-    <!-- NEW SECTION: Founder's Inspiration (Magenta Background) -->
-    <section class="py-20 bg-[#ec008c] text-white">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-1/2">
-                    <img src="https://i.ibb.co/WpVMsXVR/Gemini-Generated-Image-bhm88cbhm88cbhm8.png" alt="My Inspiration - Family" class="rounded-2xl shadow-2xl w-full h-auto object-cover transform hover:scale-[1.02] transition duration-500">
+    <!-- 7. The Race to 5 / Offer Section -->
+    <section id="race-to-5" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-20">
+            <div class="absolute w-96 h-96 bg-blue-500 rounded-full -top-20 -left-20 blur-3xl"></div>
+            <div class="absolute w-96 h-96 bg-pink-500 rounded-full top-1/2 right-0 blur-3xl"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">Join the Race to Be Part of the First 5 Customers</h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-yellow-500 mx-auto mb-8"></div>
+            
+            <p class="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">
+                We are looking for our first <strong>5 Founding Customers</strong>. We don't just want to install a mural; we want to trace your experience, get your honest feedback, and start a movement together.
+            </p>
+            
+            <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 max-w-2xl mx-auto transform hover:scale-105 transition duration-300 shadow-2xl">
+                <div class="flex items-center justify-center gap-4 mb-2">
+                     <span class="text-3xl">🏁</span>
+                     <div class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-500">
+                        40% OFF
+                    </div>
+                    <span class="text-3xl">🏁</span>
                 </div>
-                <div class="md:w-1/2 text-center md:text-left">
-                    <h2 class="text-3xl md:text-5xl font-bold mb-6">This is my inspiration.</h2>
-                    <p class="text-xl md:text-2xl font-medium leading-relaxed opacity-95">
-                        My four girls and amazing wife is what helps me to stay energized when I run into days where it feels like the world zaps all the energy from my life.
-                    </p>
-                </div>
+                
+                <p class="text-lg text-white font-medium">For The First 5 Founding Homes</p>
+                <p class="text-sm text-slate-400 mt-4 px-6 leading-relaxed">
+                    Receive 40% OFF your entire project. We aren't just looking for clients; we're looking for partners to help us launch. Help us tell our story, and we'll help you tell yours.
+                </p>
+
+                <!-- Updated Button: Links to Cal.com -->
+                <a href="https://cal.com/antony-king-yrxtiq/60min" target="_blank" class="inline-block mt-8 bg-[#ec008c] text-white px-10 py-4 rounded-full font-bold text-xl shadow-lg hover:bg-pink-600 transition transform hover:-translate-y-1">
+                    Join the Starting 5
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Contact / Booking Section -->
-    <section id="book" class="py-20 bg-slate-50">
-        <div class="container mx-auto px-6 max-w-4xl">
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row">
-                <div class="bg-slate-900 text-white p-10 md:w-2/5 flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-2xl font-bold mb-4">Let's Connect</h3>
-                        <!-- Updated Text: Race to 5 -->
-                        <p class="text-slate-300 mb-8">The "Race to 5" has started. Claim your spot today.</p>
-                        <div class="space-y-4">
-                            <div class="flex items-center gap-3">
-                                <i class="fas fa-envelope text-blue-400"></i>
-                                <span>hello@muralme.com</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <i class="fas fa-phone text-blue-400"></i>
-                                <span>(555) 123-4567</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <i class="fas fa-map-marker-alt text-blue-400"></i>
-                                <span>Serving the DMV Area</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-10">
-                        <p class="text-sm text-slate-400">© 2026 Mural Me.</p>
-                    </div>
+    <!-- 8. Footer (Replaces Contact Form) -->
+    <footer id="book" class="py-12 bg-black text-white border-t border-slate-800">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-2xl font-bold mb-6 font-brand">Let's Connect</h3>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-10">
+                <!-- Removed Email Link Here -->
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-phone text-[#ec008c]"></i>
+                    <span>(555) 123-4567</span>
                 </div>
-                <div class="p-10 md:w-3/5">
-                    <h3 class="text-2xl font-bold mb-6 text-slate-800">Book Your Free Discovery Meeting</h3>
-                    <form onsubmit="event.preventDefault(); alert('Thanks for joining the race! We will be in touch shortly.');">
-                        <div class="space-y-4">
-                            <div>
-                                <label class="block text-sm font-semibold text-slate-700 mb-1">Your Name</label>
-                                <input type="text" class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="Jane Doe">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-semibold text-slate-700 mb-1">Email Address</label>
-                                <input type="email" class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="jane@example.com">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-semibold text-slate-700 mb-1">What's your vision?</label>
-                                <textarea rows="3" class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="I have a blank wall in my home office..."></textarea>
-                            </div>
-                            <!-- Updated Button Text -->
-                            <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold py-3 rounded-lg shadow-md hover:from-blue-700 hover:to-blue-800 transition transform hover:scale-[1.02]">
-                                Join the Starting 5
-                            </button>
-                            <p class="text-xs text-center text-slate-500 mt-4">Spots are filling up. Secure your 40% discount now.</p>
-                        </div>
-                    </form>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-map-marker-alt text-[#ec008c]"></i>
+                    <span>Serving the DMV Area</span>
                 </div>
             </div>
+            <p class="text-sm text-slate-500">© 2026 Mural Me.</p>
         </div>
-    </section>
+    </footer>
 
 </body>
 </html>
